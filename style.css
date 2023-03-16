@@ -7,16 +7,29 @@
 :root {
     --primary-color: #647eff;
     --secondary-color: #42d392;
-    --background-color: #8c00ff
+    --background-color: #202020;
 }
 
 header * {
     text-align: center;
+    color: #FFF;
 }
 
 header h1 {
+    padding-top: 50px;
     font-weight: bold;
     font-size: 5rem;
+}
+
+.logo {
+    padding: 50px;
+    transition: .3s;
+    filter: drop-shadow(0 0 5px var(--secondary-color));
+}
+
+.logo:hover {
+    transition: .3s;
+    filter: drop-shadow(0 0 15px var(--secondary-color));
 }
 
 body {
@@ -25,16 +38,12 @@ body {
     background: var(--background-color);
     background-size: 200% 200%;
     animation: background-change 5s linear infinite;
+    text-align: center;
 }
 
 section {
     padding-bottom: 60vh;
     margin-bottom: -60vh;
-}
-
-img {
-    user-select: none;
-    pointer-events: none;
 }
 
 .gradient-bg {
@@ -53,6 +62,6 @@ img {
     background: #00cba9;
 }
 
-.yellow {
-    background: #ffd700;
+.pink {
+    background: #e7008a;
 }
