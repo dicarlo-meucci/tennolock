@@ -10,6 +10,25 @@
     --background-color: #202020;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--background-color);
+    background-size: 200% 200%;
+    animation: background-change 5s linear infinite;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    position: relative;
+    min-height: 100vh;
+}
+
 header * {
     text-align: center;
     color: #FFF;
@@ -23,22 +42,13 @@ header h1 {
 
 .logo {
     padding: 50px;
-    transition: .3s;
+    transition: filter .3s;
     filter: drop-shadow(0 0 5px var(--secondary-color));
 }
 
 .logo:hover {
-    transition: .3s;
+    transition: filter .3s;
     filter: drop-shadow(0 0 15px var(--secondary-color));
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    background: var(--background-color);
-    background-size: 200% 200%;
-    animation: background-change 5s linear infinite;
-    text-align: center;
 }
 
 section {
@@ -46,12 +56,22 @@ section {
     margin-bottom: -60vh;
 }
 
+.divider {
+    user-select: none;
+    pointer-events: none;
+}
+
 .gradient-bg {
     color: transparent;
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
     background-clip: text;
     font-weight: bolder;
-    filter: drop-shadow(0 0 1px #000);
+}
+
+.bi {
+    font-size: 30px;
+    padding: 15px;
 }
 
 .blue {
@@ -64,4 +84,44 @@ section {
 
 .pink {
     background: #e7008a;
+}
+
+.black {
+    background: var(--background-color);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.footer section {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+}
+
+footer {
+    background: var(--background-color);
+}
+
+#go-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    border-radius: 50%;
+    background: #FFF;
+    z-index: 100;
+    width: 70px;
+    height: 70px;
+    border: 0;
+    
+}
+
+.hidden {
+    display: none;
 }
