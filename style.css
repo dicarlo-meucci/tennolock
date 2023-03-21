@@ -17,6 +17,7 @@ body {
     background-size: 200% 200%;
     animation: background-change 5s linear infinite;
     text-align: center;
+    overflow-x: hidden;
 }
 
 p {
@@ -124,4 +125,21 @@ footer {
 
 .hidden {
     display: none;
+}
+
+footer a, a:active, a:link, a:visited {
+    color: white;
+}
+
+.copyright a {
+    color: #0099ff;
+}
+
+.carousel {
+    width: 100%;
+}
+
+
+.carousel img {
+    width: 300px;
 }

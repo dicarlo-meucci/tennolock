@@ -17,3 +17,5 @@ window.onscroll = () =>
         goToTopBtn.classList.add("hidden")
     }
 }
+
+let images = document.querySelectorAll(".carousel-image")
