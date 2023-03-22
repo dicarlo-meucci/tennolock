@@ -24,33 +24,80 @@
             <div class="section-container">
                 <img class="divider" src="media/blue-waves.svg">
                 <section class="blue">
-                    <div class="carousel">
-                        <img class="carousel-image" src="media/lock1.png">
-                        <img class="carousel-image" src="media/lock2.webp">
-                        <img class="carousel-image" src="media/lock3.webp">
+                    <h1>GALLERIA DEI PRODOTTI</h1>
+                    <div id="product-carousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="carousel-lock" src="media/lock1.png" class="d-block">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img class="carousel-lock" src="media/lock2.webp" class="d-block">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="carousel-lock" src="media/lock3.webp" class="d-block">
+                            </div>
+                        </div>
                     </div>
+                    <h2 id="product-description"></h2>
                 </section>
             </div>
             <div class="section-container">
                 <img class="divider" src="media/cyan-waves.svg">
                 <section class="cyan">
-                    <h1>Placeholder</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum ducimus architecto,
-                        consectetur
-                        ratione quisquam pariatur, et repellat necessitatibus vero quia blanditiis repudiandae soluta,
-                        esse
-                        porro explicabo aperiam? Illum, molestias?</p>
+                    <h1>IL TEAM</h1>
+                    <div class="member-frame">
+                        <img class="team-member" src="media/quick.png">
+                        <h3>Leonardo Di Carlo</h3>
+                    </div>
+                    <div class="member-frame">
+                        <img class="team-member" src="media/jack.png">
+                        <h3>Giacomo Meratti</h3>
+                    </div>
+                    <div class="member-frame">
+                        <img class="team-member" src="media/battistini.png">
+                        <h3>Niccolò Batistini</h3>
+                    </div>
+                    <div class="member-frame">
+                        <img class="team-member" src="media/ed.png">
+                        <h3>Edmard Guilot</h3>
+                    </div>
+                    <div class="member-frame">
+                        <img class="team-member" src="media/lulli.png">
+                        <h3>FIlippo Lulli</h3>
+                    </div>
                 </section>
             </div>
             <div class="section-container">
                 <img class="divider" src="media/pink-waves.svg">
                 <section class="pink">
-                    <h1>Placeholder</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum ducimus architecto,
-                        consectetur
-                        ratione quisquam pariatur, et repellat necessitatibus vero quia blanditiis repudiandae soluta,
-                        esse
-                        porro explicabo aperiam? Illum, molestias?</p>
+                    <h1>I PRODOTTI</h1>
+                    <div class="products">
+                        <div class="card" style="width: 18rem;">
+                            <img src="media/lock1.png" class="card-img-top p-5">
+                            <div class="card-body">
+                                <h4>Tennoround Master</h4>
+                                <p class="card-text">Porta sempre con te il nuovo e tecnologico <strong>Tennoround
+                                        Master</strong>, torna utile in qualsiasi situazione con i suoi sistemi di
+                                    difesa avanzati. <br>Questo lucchetto è di ultima generazione Tennolock.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="media/lock2.webp" class="card-img-top p-5">
+                            <div class="card-body">
+                                <h4>Tennosafe V2</h4>
+                                <p class="card-text">Il <strong>Tennosafe V2</strong> è ideale per proteggere i tuoi
+                                    beni più importanti, come gioelli e denaro. Perfetto per essere utilizzato con una
+                                    cassaforte come protezione aggiuntiva.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="media/lock3.webp" class="card-img-top p-5">
+                            <div class="card-body">
+                                <h4>Tennobike Model 3</h4>
+                                <p class="card-text">Hai paura dei [redacted] ? Non c'è problema! Da ora in poi la tua bicicletta sarà sempre al sicuro grazie al <strong>Tennobike Model 3</strong></p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </div>
             <div class="section-container footer">
@@ -59,13 +106,14 @@
                     <footer class="text-center p-3">
                         <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
                         <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i
+                                class="bi bi-youtube"></i></a>
                         <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
                         <br>
                         <div class="copyright">
-                        © <span id="copyright-year"></span> Copyright
-                        <a href="https://iquick.me">TENNOLOGI SRL</a>
-                    </div>
+                            © <span id="copyright-year"></span> Copyright
+                            <a href="https://iquick.me">TENNOLOGI SRL</a>
+                        </div>
                     </footer>
                 </section>
             </div>
@@ -79,7 +127,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/go_to_top.js"></script>
+    <script src="scripts/copyright.js"></script>
 </body>
 
 </html>
