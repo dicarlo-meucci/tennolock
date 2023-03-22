@@ -38,7 +38,7 @@ header * {
 header h1 {
     padding-top: 50px;
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .logo {
@@ -188,11 +188,34 @@ footer a, a:active, a:link, a:visited {
 }
 
 .card {
+    width: 20rem;
     border-radius: 15px;
 }
 
 @media screen and (max-width: 1500px) {
+    header h1 {
+        font-size: 4rem;
+    }
+
     section h1 {
+        font-size: 3rem;
         margin-top: 0px;
+    }
+
+    .carousel-lock {
+        width: 350px;
+        height: 350px;
+        object-fit: scale-down;
+    }
+
+    .products {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 30px;
     }
 }
