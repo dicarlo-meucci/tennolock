@@ -8,7 +8,6 @@
     --primary-color: #647eff;
     --secondary-color: #42d392;
     --background-color: #202020;
-    --animation-time: 2s;
 }
 
 body {
@@ -233,13 +232,15 @@ a:visited {
 
 /*chi siamo*/
 .chi-siamo-text{
-    width: 100%;
-    margin-left: 30px;
-    margin-right: 30px;
+    font-weight: 400;
     padding: 30px;
+    width: 65%;
+    margin: auto;
+    -webkit-transition: color 1s; 
+    transition: color 1s;
 }
 
 .slogan{
-    color: rgb(16, 201, 124);
+    color: rgb(16, 179, 201);
     font-weight: 500;
 }
