@@ -30,6 +30,10 @@ p {
     min-height: 100vh;
 }
 
+.last-section {
+    padding-bottom: 30vh;
+}
+
 header * {
     text-align: center;
 }
@@ -63,10 +67,6 @@ header h2 {
 section {
     padding-bottom: 60vh;
     margin-bottom: -60vh;
-}
-
-.last-section {
-    padding-bottom: 30vh;
 }
 
 .divider {
@@ -122,6 +122,10 @@ section {
     padding: 0;
     margin: 0;
     width: 100%;
+}
+
+.last-section {
+    padding-bottom: 50vh;
 }
 
 .footer section {
@@ -360,5 +364,9 @@ section h3 {
     .sponsor {
         width: 300px;
         height: 300px;
+    }
+
+    .last-section {
+        padding-bottom: 20vh;
     }
 }
