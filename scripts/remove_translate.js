@@ -1,15 +1,16 @@
 window.onload = () => {
     
     let removeTranslateInterval = setInterval(() => {
-        if (!checkTranslateText())
+        if (checkTranslateText())
         {
             clearInterval(removeTranslateInterval)
             removeTranslateText()
             console.log("tried removing")
         }
+        else
+        clearInterval(removeTranslateInterval)
     }, 50)
     removeTranslateText()
-    
 }
 
 function checkTranslateText() {

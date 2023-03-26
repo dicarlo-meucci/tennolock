@@ -60,7 +60,6 @@ header h2 {
     filter: drop-shadow(0 0 15px var(--secondary-color));
 }
 
-
 section {
     padding-bottom: 60vh;
     margin-bottom: -60vh;
@@ -104,6 +103,10 @@ section {
     background: var(--background-color);
 }
 
+.orange {
+    background: #ff5500;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -125,7 +128,7 @@ footer {
 
 #go-to-top {
     position: fixed;
-    bottom: 50px;
+    bottom: 100px;
     right: 20px;
     border-radius: 50%;
     background: #FFF;
@@ -133,7 +136,6 @@ footer {
     width: 70px;
     height: 70px;
     border: 0;
-
 }
 
 section h1 {
@@ -197,7 +199,7 @@ a:visited {
     }
 
     50% {
-        transform: scale(1.1) rotate(5deg);
+        transform: scale(1.1) rotate(8deg);
     }
 
     100% {
@@ -244,8 +246,7 @@ a:visited {
     }
 }
 
-/*chi siamo*/
-.chi-siamo-text{
+.who-we-are {
     font-weight: 400;
     padding: 30px;
     width: 65%;
@@ -256,7 +257,7 @@ a:visited {
 }
 
 .slogan{
-    color: rgb(16, 179, 201);
+    color: var(--primary-color);
     font-weight: 500;
 }
 
@@ -281,4 +282,26 @@ a:visited {
     width: max-content;
     height: 30px;
     border-radius: 10px;
+}
+
+.store-frame {
+    display: inline-block;
+}
+
+.store-frame h3 {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+}
+
+.store {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 300px;
+    transition: transform .2s;
+}
+
+.store:hover {
+    transition: transform .2s;
+    transform: scale(1.1);
 }
