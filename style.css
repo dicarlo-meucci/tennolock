@@ -191,13 +191,12 @@ a:visited {
     transition: transform, 0.2s;
     transform: scale(1.1);
     filter: drop-shadow(0 0 5px #000);
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1);
 }
 
-/*
 .team-member:active {
     transform: scale(1.1) rotate(5deg);
-}*/
+}
 
 .products {
     display: flex;
