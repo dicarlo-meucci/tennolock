@@ -65,6 +65,10 @@ section {
     margin-bottom: -60vh;
 }
 
+.last-section {
+    padding-bottom: 30vh;
+}
+
 .divider {
     user-select: none;
     pointer-events: none;
@@ -84,11 +88,11 @@ section {
 }
 
 .blue {
-    background: #0099ff;
+    background: #A7C7E7;
 }
 
 .cyan {
-    background: #00cba9;
+    background: #A4D8D8;
 }
 
 .green {
@@ -96,15 +100,19 @@ section {
 }
 
 .pink {
-    background: #e7008a;
+    background: #C3B1E1;
+}
+
+.yellow {
+    background: #FDFD96;
 }
 
 .black {
     background: var(--background-color);
 }
 
-.orange {
-    background: #ff5500;
+.purple {
+    background: #966fd6;
 }
 
 .footer {
@@ -216,44 +224,31 @@ a:visited {
 .card {
     width: 20rem;
     border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0 0 5px 1px #0008;
 }
 
-@media screen and (max-width: 1500px) {
-    header h1 {
-        font-size: 4rem;
-    }
-
-    section h1 {
-        font-size: 3rem;
-        margin-top: 0px;
-    }
-
-    .carousel-lock {
-        width: 350px;
-        height: 350px;
-        object-fit: scale-down;
-    }
-
-    .products {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        margin-bottom: 30px;
-    }
-}
-
-.who-we-are {
+.who-we-are p {
     font-weight: 400;
-    padding: 30px;
     width: 65%;
     margin: auto;
     -webkit-transition: color 1s; 
     transition: color 1s;
-    font-size: larger;
+    font-size: 1.5rem;
+}
+
+.who-we-are h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.who-we-are h3 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    font-size: 2.5rem;
 }
 
 .slogan{
@@ -304,4 +299,66 @@ a:visited {
 .store:hover {
     transition: transform .2s;
     transform: scale(1.1);
+}
+
+section h3 {
+    margin-top: -50px;
+}
+
+.sponsor {
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    object-fit: scale-down;
+}
+
+.price {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: -10px;
+    left: -10px;
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background: #966fd6;
+}
+
+.price-text {
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 1500px) {
+    header h1 {
+        font-size: 4rem;
+    }
+
+    section h1 {
+        font-size: 4rem;
+        margin-top: 0px;
+    }
+
+    .carousel-lock {
+        width: 350px;
+        height: 350px;
+        object-fit: scale-down;
+    }
+
+    .products {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .sponsor {
+        width: 300px;
+        height: 300px;
+    }
 }
