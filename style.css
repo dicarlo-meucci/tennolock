@@ -32,13 +32,18 @@ p {
 
 header * {
     text-align: center;
-    color: #FFF;
 }
 
 header h1 {
     padding-top: 50px;
     font-weight: bold;
     font-size: 6rem;
+    color: #FFF;
+}
+
+header h2 {
+    text-align: center;
+    color: #FFF;
 }
 
 .logo-padding{
@@ -179,12 +184,14 @@ a:visited {
     padding-right: 50px;
     width: 300px;
     transition: transform .2s;
+    
 }
 
 .team-member:hover {
-    transition: transform .2s;
+    transition: transform, 0.2s;
     transform: scale(1.1);
     filter: drop-shadow(0 0 5px #000);
+    transform: rotate(5deg);
 }
 
 .team-member:active {
@@ -238,9 +245,23 @@ a:visited {
     margin: auto;
     -webkit-transition: color 1s; 
     transition: color 1s;
+    font-size: larger;
 }
 
 .slogan{
     color: rgb(16, 179, 201);
     font-weight: 500;
+}
+
+.google-translator{
+    color: #ffffff;
+    font-size: x-large;
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd{
+    display:none;
+}
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf{
+    display:none;
 }
